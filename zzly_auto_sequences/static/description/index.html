@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>图片展示</title>
+<style>
+    /* 设置图片样式 */
+    .img-container img {
+        width: 80%;
+        height: auto; /* 自动调整高度以保持宽高比 */
+        display: block;
+        margin: 10px auto; /* 水平居中 */
+    }
+    .img-container {
+        text-align: center; /* 如果父元素有文本，则居中对齐 */
+    }
+    font-size: 40px;
+    font-weight: bold;
+</style>
+</head>
+<body>
+
+<div class="img-container">
+    <p> 1. Settings - General Settings - Enable Developer Mode;</p>
+    <img src="dev.png" alt="开发者图片">
+     <p> 2.Settings-Technical-Sequences，Define encoding rules </p>
+    <img src="seq.png" alt="序列图片">
+ <p> 4.Sequence Code cannot be empty and cannot be duplicated </p>
+    <img src="code.png" alt="代码图片">
+    <p> 5.If the Parent Category is not set,use Parent Category for encoding;Only products created for the first time will be automatically encoded.</p>
+    <img src="cate.png" alt="分类图片">
+    <p> Set automatic coding rules for partners</p>
+    <img src="part.png" alt="部分图片">
+</div>
+
+</body>
+</html>

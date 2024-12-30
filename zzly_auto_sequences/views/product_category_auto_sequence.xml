@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<odoo>
+    <record id="zzly_auto_sequences_product_category_inherit" model="ir.ui.view">
+        <field name="name">product.category.form.inherit</field>
+        <field name="model">product.category</field>
+        <field name="inherit_id" ref="product.product_category_form_view"/>
+        <field name="arch" type="xml">
+            <!-- 在表单的适当位置添加新字段 -->
+            <xpath expr="//field[@name='parent_id']" position="after">
+<!--                <group string="设置编码规则">-->
+                    <field name="auto_sequences" class="oe_inline"/>
+<!--                </group>-->
+            </xpath>
+        </field>
+    </record>
+</odoo>
