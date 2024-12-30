@@ -1,0 +1,84 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* zzly_auto_sequences
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-28 01:29+0000\n"
+"PO-Revision-Date: 2024-12-28 01:29+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: zzly_auto_sequences
+#: model:ir.model.fields,help:zzly_auto_sequences.field_res_config_settings__contact_encoding_rule
+msgid ""
+"\n"
+"    步骤：1、设置-一般设置-启用开发者模式；\n"
+"2、设置-技术-序列 Sequences中定义编码规则,序列类型不能为空，并且不能重复；\n"
+"3、只有首次创建联系人/合作伙伴/供应商时才会自动编码。"
+msgstr  ""
+"\n"
+"    步骤：1、设置-一般设置-启用开发者模式；\n"
+"2、设置-技术-序列 Sequences中定义编码规则,序列类型不能为空，并且不能重复；\n"
+"3、只有首次创建联系人/合作伙伴/供应商时才会自动编码。"
+
+#. module: zzly_auto_sequences
+#: model:ir.model.fields,help:zzly_auto_sequences.field_product_category__auto_sequences
+msgid ""
+"\n"
+"    步骤：1、设置-一般设置-启用开发者模式；\n"
+"2、设置-技术-序列 Sequences中定义编码规则，序列类型不能为空，并且不能重复；\n"
+"3、未设置的会调取上级类别的编码规则；\n"
+"4、只有首次创建的产品才会自动编码。"
+msgstr ""
+"\n"
+"    步骤：1、设置-一般设置-启用开发者模式；\n"
+"2、设置-技术-序列 Sequences中定义编码规则，序列类型不能为空，并且不能重复；\n"
+"3、未设置的会调取上级类别的编码规则；\n"
+"4、只有首次创建的产品才会自动编码。"
+
+#. module: zzly_auto_sequences
+#: model:ir.model,name:zzly_auto_sequences.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置设定"
+
+#. module: zzly_auto_sequences
+#: model:ir.model,name:zzly_auto_sequences.model_res_partner
+msgid "Contact"
+msgstr "联系人"
+
+#. module: zzly_auto_sequences
+#: model:ir.model,name:zzly_auto_sequences.model_product_template
+msgid "Product"
+msgstr "产品"
+
+#. module: zzly_auto_sequences
+#: model:ir.model,name:zzly_auto_sequences.model_product_category
+msgid "根据产品类别自动设置编码规则"
+msgstr "产品类别"
+
+#. module: zzly_auto_sequences
+#: model_terms:ir.ui.view,arch_db:zzly_auto_sequences.view_res_config_settings_view_form
+msgid ""
+"步骤：1、设置-一般设置-启用开发者模式； 2、设置-技术-序列 Sequences中定义编码规则； "
+"3、只有首次创建联系人/合作伙伴/供应商时才会自动编码。"
+msgstr ""
+"步骤：1、设置-一般设置-启用开发者模式； 2、设置-技术-序列 Sequences中定义编码规则； "
+"3、只有首次创建联系人/合作伙伴/供应商时才会自动编码。"
+
+#. module: zzly_auto_sequences
+#: model:ir.model.fields,field_description:zzly_auto_sequences.field_res_config_settings__contact_encoding_rule
+#: model_terms:ir.ui.view,arch_db:zzly_auto_sequences.view_res_config_settings_view_form
+msgid "设置合作伙伴自动编码规则"
+msgstr  "设置合作伙伴自动编码规则"
+
+#. module: zzly_auto_sequences
+#: model:ir.model.fields,field_description:zzly_auto_sequences.field_product_category__auto_sequences
+msgid "设置自动编码规则"
+msgstr "设置自动编码规则"

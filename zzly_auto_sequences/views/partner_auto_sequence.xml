@@ -1,0 +1,30 @@
+<!--原始视图如下视图id：base_setup.res_config_settings_view_form-->
+
+<!--    <div id="contacts_settings">-->
+<!--                            <block title="Contacts" name="contacts_setting_container">-->
+<!--                                <setting id="sms" string="Send SMS" documentation="/applications/marketing/sms_marketing/pricing/pricing_and_faq.html" help="Send texts to your contacts">-->
+<!--                                    <field name="module_sms"/>-->
+<!--                                </setting>-->
+<!--                                <setting help="Automatically enrich your contact base with company data" title="When populating your address book, Odoo provides a list of matching companies. When selecting one item, the company data and logo are auto-filled." id="partner_autocomplete">-->
+<!--                                    <field name="module_partner_autocomplete"/>-->
+<!--                                </setting>-->
+<!--                        </block>-->
+
+<odoo>
+    <data>
+        <record id="view_res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                 <xpath expr="//setting[@id='partner_autocomplete']" position="after">
+                       <setting help="步骤：1、设置-一般设置-启用开发者模式；
+2、设置-技术-序列 Sequences中定义编码规则；
+3、只有首次创建联系人/合作伙伴/供应商时才会自动编码。" title="设置合作伙伴自动编码规则" >
+                    <field name="contact_encoding_rule"/>
+                      </setting>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
